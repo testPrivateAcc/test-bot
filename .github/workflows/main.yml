@@ -23,3 +23,7 @@ jobs:
         uses: acrossoffwest/deploy-pr-action@v1.6.5
         with:
           distDir: out
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }} # Surge.sh email
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }} # Surge.sh token
