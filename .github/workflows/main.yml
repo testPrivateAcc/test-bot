@@ -20,6 +20,6 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: Deploy PR
-        uses: AnandChowdhary/deploy-pr-action@v1.5.0
+        uses: acrossoffwest/deploy-pr-action@v1.6.5
         with:
           distDir: out
